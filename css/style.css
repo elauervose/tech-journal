@@ -157,7 +157,7 @@ span.row-mn {  background:url(../images/row-m1.png) no-repeat right center; widt
 
 /* Side Nav */
 
-#side-content { float:right;}
+#side-content { float:left;}
 #side-nav { float:left;}
 #side-nav ul { padding:10px 20px; background:#fff;  border:3px solid #f3f3f3; list-style:none;}
 #side-nav ul li { border-bottom:1px solid #eaeaea; padding:0; margin:0;}
@@ -208,10 +208,10 @@ span.row-mn {  background:url(../images/row-m1.png) no-repeat right center; widt
 
 /* Distance (Vertical Spaces) */
 
-.vertical-space, .vertical-space1, .vertical-space2, .vertical-space3, .vertical-space4, .vertical-space5 { display:block; width:100%; margin:0; clear:both; border:0 none; height:20px; }
-.vertical-space1 { height:15px; }
-.vertical-space2 { height:40px; }
-.vertical-space3 { height:60px; }
+.vertical-space, .vertical-space1, .vertical-space2, .vertical-space3, .vertical-space4, .vertical-space5 { display:block; width:100%; margin:0; clear:both; border:0 none; height:30px; }
+.vertical-space1 { height:1em; }
+.vertical-space2 { height:1.5em; }
+.vertical-space3 { height:2em; }
 .vertical-space4 { height:80px; }
 .vertical-space5 { height:100px; }
 *+html hr.vertical-space, *+html hr.vertical-space1, *+html hr .vertical-space2, *+html hr.vertical-space3, *+html hr.vertical-space4, *+html hr.vertical-space5 { height:0px; margin:10px 0; background:#fff; border:1px solid #fff;}
@@ -269,13 +269,7 @@ ul.our-clients img { max-width:100%;}
 .footer-in { margin: 0 auto; padding-bottom:50px; color:#ccc; position:relative;  }
 .footer-in .columns { margin-top:20px;}
 .footer-in h4 { color:#c4c6c8; border-bottom:4px solid #252627; padding-bottom:6px; margin:0; margin:39px 0 21px 0; font-size:13px; text-align:center;  }
-.footer-in2 h4,
-.footer-in2 h3 {
-	color:#c4c6c8;
-	padding-bottom:6px;
-	font-weight: 400;
-	text-align: center;
-}
+
 .footer-in hr { border-color:#373737;}
 
 .footer-in .copyright-txt { font-size:12px; }
@@ -398,9 +392,11 @@ ul.our-clients img { max-width:100%;}
 
 /* BLOG */
 
-.sidebar, .rgt-cntt { background:url(../images/brdr-line.png) repeat-y 15px; min-height:160px;}
+.sidebar, .rgt-cntt {
+	background:url(../images/brdr-line.png) repeat-y 15px;
+	min-height:160px;}
 .sidebar { padding-bottom:40px; }
-.sidebar.leftside { background-position: 245px; padding-right:60px; }
+.sidebar.leftside { background-position: 245px; padding-left:60px; }
 .sidebar h4.subtitle { border:0 none; color:#54606b; margin-bottom:14px; }
 .sidebar p, .sidebar li { font-size:13px;}
 .sidebar input[type="text"].search-side { width:97%; max-width:100%; }

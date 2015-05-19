@@ -6,12 +6,20 @@
   line-height:1;
 }
 
+.header2 {
+  font-weight: 600;
+  font-size: 2.3em;
+  color: #6b6b6b;
+  line-height:1;
+  margin-bottom: 20px;
+}
+
 .small {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.3em;
   color: #6b6b6b;
-  line-height:.75;
-  letter-spacing: .08em;
+  line-height:0.65;
+  letter-spacing: 0.07em;
   line-height:1;
 }
 
@@ -19,4 +27,18 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .footer-in2 {
+    color:#c4c6c8;
+    padding-bottom:6px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .light, .light:hover {
+    color:#ffff;
+    font-weight: 200;
+    font-size: 1.5em;
+    text-decoration: underline;
   }

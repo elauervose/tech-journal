@@ -10,7 +10,7 @@
     {% include header.html %}
 
     <section class="container page-content" >
-
+      <hr class="vertical-space3">
       <section class="eleven columns">
 
       {{ content }}
@@ -22,10 +22,10 @@
         <h4 class="subtitle">Categories</h4>
         <div class="listbox1">
           <ul>
-            <li><a href="#">Company </a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Other </a></li>
+            <li><a href="/internet.html">How the Internet Works</a></li>
+            <li><a href="/tech-matters.html">Why Tech Matters</a></li>
+            <li><a href="/tools.html">Evaluating Tools & Resources</a></li>
+            <li><a href="/ed-tech.html">EdTech</a></li>
           </ul>
         </div>
         <!-- end-listbox1 -->
@@ -33,10 +33,9 @@
         <h4 class="subtitle">Recent Posts</h4>
         <div class="listbox1">
           <ul>
-            <li><a href="#">Company </a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Other </a></li>
+            {% for post in site.posts | limit:20 %}
+            <li><a href="{{ post.url }}"> {{post.date | date: '%b. %d, %Y' }} {{ post.title }}</a></li>
+            {% endfor %}
           </ul>
         </div>
         <!-- end-listbox1 -->
