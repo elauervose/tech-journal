@@ -1,0 +1,46 @@
+---
+layout: default
+---
+  <hr class="vertical-space2">
+  {% for post in site.posts | limit:20 %}
+  <article class="blog-post">
+    <hr class="vertical-space2">
+    <div class="one columns alpha">
+      <div class="blog-date-sec"> <span>{{ post.date | date: '%B' }}</span>
+        <h3>{{ post.date | date: '%d' }}</h3>
+        <span>{{ post.date | date: '%Y' }}</span>
+      </div>
+    </div>
+    <div class="four columns alpha">
+      <a href="{{ post.url }}"><img src="{{ post.image-thumb }}" alt=""></a><br>
+    </div>
+    <div class="six columns omega">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <div class="postmetadata">
+        <h6 class="blog-author"><strong>by</strong> {{ post.author }}</h6><h6 class="blog-author"><strong>in</strong></h6>
+        <h6 class="blog-cat"><a href="{{ post.category_url }}.html">{{ post.category }}</a></h6>
+      </div>
+      <p>
+        {{ post.content | strip_html | truncate: 200}}
+      </p>
+      <a href="{{ post.url }}"  class="readmore">read more</a>
+    </div>
+    <br class="clear">
+  </article>
+  {% endfor %}
+
+  <br class="clear">
+  <div class="pagination2 pagination2-centered">
+    <ul>
+      <li class="disabled"><a href="#">&laquo;</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+  </div>
+  <div class="vertical-space2"></div>
+
+
+
