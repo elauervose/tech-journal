@@ -42,3 +42,36 @@
     font-size: 1.5em;
     text-decoration: underline;
   }
+
+  p, li {
+    font-size: 1.2em;
+  }
+
+  p.blog-inpic-right {
+    margin-top:21px;
+  }
+
+  p.blog-inpic-right img {
+    float:right;
+    border:1px solid #c9c9c9;
+    background:#f9f9f9;
+    width:280px;
+    max-width:100%;
+    padding:6px;
+    margin:0 14px 14px 0;
+  }
+
+  h4.blog-inpic-right {
+    margin-top:21px;
+  }
+
+  h4.blog-inpic-right img {
+    float:right;
+    border:1px solid #c9c9c9;
+    background:#f9f9f9;
+    width:280px;
+    max-width:100%;
+    padding:6px;
+    margin:10px 14px 14px 0;
+  }
+

@@ -1,15 +1,15 @@
 # Site settings
 title: The Tech Journals of a Former Troglodyte
 email: erica@lauervose.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://tech-journals.lauervose.com" # the base hostname & protocol for your site
-permalink: title
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "" # the base hostname & protocol for your site
+# permalink:
+twitter_username: elauervose
+github_username:  elauervose
 
 # Build settings
 markdown: kramdown
+
+
