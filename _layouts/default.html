@@ -21,11 +21,11 @@
         <hr class="vertical-space2">
         <h4 class="subtitle">Categories</h4>
         <div class="listbox1">
+
           <ul>
-            <li><a href="/internet.html">How the Internet Works</a></li>
-            <li><a href="/tech-matters.html">Why Tech Matters</a></li>
-            <li><a href="/tools.html">Evaluating Tools & Resources</a></li>
-            <li><a href="/ed-tech.html">EdTech</a></li>
+            {% for category in site.cat_map %}
+            <li><a href="{{ category[1].url }}">{{ category[1].name }}</a></li>
+            {% endfor %}
           </ul>
         </div>
         <!-- end-listbox1 -->
